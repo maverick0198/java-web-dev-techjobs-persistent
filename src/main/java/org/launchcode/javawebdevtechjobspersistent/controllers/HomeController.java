@@ -63,7 +63,7 @@ public class HomeController {
         newJob.setSkills(skillsObj);
         jobRepository.save(newJob);
 
-        return "list"; //Changed to "list" template so that i can see my jobs.
+        return "redirect:/"; //Changed to "list" template so that i can see my jobs.
     }
 
     @GetMapping("view/{jobId}")

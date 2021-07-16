@@ -13,3 +13,6 @@
     DROP TABLE job;
 
 ## Part 4: Test it with SQL
+    SELECT * FROM skill
+    WHERE id IN (SELECT skills_id FROM job_skills WHERE skills_id IS NOT NULL)
+    ORDER BY name ASC;
